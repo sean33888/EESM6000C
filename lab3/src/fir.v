@@ -98,13 +98,13 @@ always @(posedge axis_clk or negedge axis_rst_n) begin
 end
 
 always @(posedge axis_clk) begin 
-    if(ap == 0 | ap[1] == 1)begin
+    if(ap == 0)begin
         ap[2] <= 1;
         ap[1] <= 0;
     end else if(wdata == 32'h1)begin
         ap[2] <= 0;
         ap[0] <= 1;
-    end else if(sm_tlast == 1)begin
+    end else if(sm_tlast == 1 && ss_tready)begin
         ap[0] <= 0;
         ap[1] <= 1;
     end
@@ -242,7 +242,7 @@ always @(posedge axis_clk)begin
     if(j == 0)begin
         j <= 10;
     end
-//    if(data_Di != ss_tdata)begin
+//    if(ss_tdata != 32'h00000000)begin
         if(cal === 'bx && sm_tdata === 'bx)begin
             sm_tdata = 0;
         end else if(data_Di === 'bx)begin
@@ -253,12 +253,14 @@ always @(posedge axis_clk)begin
             sm_tdata = sm_tdata + cal;
         end
 //    end
+    if(ss_tdata == 32'hffffffff)begin
+        sm_tlast <= 1;
+    end
 end
-always @(negedge ss_tready)begin
+always @(negedge ss_tready && ss_tdata!=32'h00000000)begin
     sm_tdata = 0;
 end
 endmodule
-
 
 
 

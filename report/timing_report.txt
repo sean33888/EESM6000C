@@ -1,0 +1,1227 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Sun Mar 16 10:55:55 2025
+| Host         : ubuntu2004 running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2 -file /home/ubuntu/project_1/timing_report.txt
+| Design       : bram11
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (68)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (388)
+5. checking no_input_delay (41)
+6. checking no_output_delay (32)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (68)
+-------------------------
+ There are 68 register/latch pins with no clock driven by root clock pin: CLK (HIGH)
+
+RAM_reg_0_15_0_0/DP/CLK
+RAM_reg_0_15_0_0/SP/CLK
+RAM_reg_0_15_10_10/DP/CLK
+RAM_reg_0_15_10_10/SP/CLK
+RAM_reg_0_15_11_11/DP/CLK
+RAM_reg_0_15_11_11/SP/CLK
+RAM_reg_0_15_12_12/DP/CLK
+RAM_reg_0_15_12_12/SP/CLK
+RAM_reg_0_15_13_13/DP/CLK
+RAM_reg_0_15_13_13/SP/CLK
+RAM_reg_0_15_14_14/DP/CLK
+RAM_reg_0_15_14_14/SP/CLK
+RAM_reg_0_15_15_15/DP/CLK
+RAM_reg_0_15_15_15/SP/CLK
+RAM_reg_0_15_16_16/DP/CLK
+RAM_reg_0_15_16_16/SP/CLK
+RAM_reg_0_15_17_17/DP/CLK
+RAM_reg_0_15_17_17/SP/CLK
+RAM_reg_0_15_18_18/DP/CLK
+RAM_reg_0_15_18_18/SP/CLK
+RAM_reg_0_15_19_19/DP/CLK
+RAM_reg_0_15_19_19/SP/CLK
+RAM_reg_0_15_1_1/DP/CLK
+RAM_reg_0_15_1_1/SP/CLK
+RAM_reg_0_15_20_20/DP/CLK
+RAM_reg_0_15_20_20/SP/CLK
+RAM_reg_0_15_21_21/DP/CLK
+RAM_reg_0_15_21_21/SP/CLK
+RAM_reg_0_15_22_22/DP/CLK
+RAM_reg_0_15_22_22/SP/CLK
+RAM_reg_0_15_23_23/DP/CLK
+RAM_reg_0_15_23_23/SP/CLK
+RAM_reg_0_15_24_24/DP/CLK
+RAM_reg_0_15_24_24/SP/CLK
+RAM_reg_0_15_25_25/DP/CLK
+RAM_reg_0_15_25_25/SP/CLK
+RAM_reg_0_15_26_26/DP/CLK
+RAM_reg_0_15_26_26/SP/CLK
+RAM_reg_0_15_27_27/DP/CLK
+RAM_reg_0_15_27_27/SP/CLK
+RAM_reg_0_15_28_28/DP/CLK
+RAM_reg_0_15_28_28/SP/CLK
+RAM_reg_0_15_29_29/DP/CLK
+RAM_reg_0_15_29_29/SP/CLK
+RAM_reg_0_15_2_2/DP/CLK
+RAM_reg_0_15_2_2/SP/CLK
+RAM_reg_0_15_30_30/DP/CLK
+RAM_reg_0_15_30_30/SP/CLK
+RAM_reg_0_15_31_31/DP/CLK
+RAM_reg_0_15_31_31/SP/CLK
+RAM_reg_0_15_3_3/DP/CLK
+RAM_reg_0_15_3_3/SP/CLK
+RAM_reg_0_15_4_4/DP/CLK
+RAM_reg_0_15_4_4/SP/CLK
+RAM_reg_0_15_5_5/DP/CLK
+RAM_reg_0_15_5_5/SP/CLK
+RAM_reg_0_15_6_6/DP/CLK
+RAM_reg_0_15_6_6/SP/CLK
+RAM_reg_0_15_7_7/DP/CLK
+RAM_reg_0_15_7_7/SP/CLK
+RAM_reg_0_15_8_8/DP/CLK
+RAM_reg_0_15_8_8/SP/CLK
+RAM_reg_0_15_9_9/DP/CLK
+RAM_reg_0_15_9_9/SP/CLK
+r_A_reg_rep_bsel[2]/C
+r_A_reg_rep_bsel[3]/C
+r_A_reg_rep_bsel[4]/C
+r_A_reg_rep_bsel[5]/C
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (388)
+--------------------------------------------------
+ There are 388 pins that are not constrained for maximum delay. (HIGH)
+
+RAM_reg_0_15_0_0/DP/I
+RAM_reg_0_15_0_0/DP/WADR0
+RAM_reg_0_15_0_0/DP/WADR1
+RAM_reg_0_15_0_0/DP/WADR2
+RAM_reg_0_15_0_0/DP/WADR3
+RAM_reg_0_15_0_0/DP/WE
+RAM_reg_0_15_0_0/SP/I
+RAM_reg_0_15_0_0/SP/WADR0
+RAM_reg_0_15_0_0/SP/WADR1
+RAM_reg_0_15_0_0/SP/WADR2
+RAM_reg_0_15_0_0/SP/WADR3
+RAM_reg_0_15_0_0/SP/WE
+RAM_reg_0_15_10_10/DP/I
+RAM_reg_0_15_10_10/DP/WADR0
+RAM_reg_0_15_10_10/DP/WADR1
+RAM_reg_0_15_10_10/DP/WADR2
+RAM_reg_0_15_10_10/DP/WADR3
+RAM_reg_0_15_10_10/DP/WE
+RAM_reg_0_15_10_10/SP/I
+RAM_reg_0_15_10_10/SP/WADR0
+RAM_reg_0_15_10_10/SP/WADR1
+RAM_reg_0_15_10_10/SP/WADR2
+RAM_reg_0_15_10_10/SP/WADR3
+RAM_reg_0_15_10_10/SP/WE
+RAM_reg_0_15_11_11/DP/I
+RAM_reg_0_15_11_11/DP/WADR0
+RAM_reg_0_15_11_11/DP/WADR1
+RAM_reg_0_15_11_11/DP/WADR2
+RAM_reg_0_15_11_11/DP/WADR3
+RAM_reg_0_15_11_11/DP/WE
+RAM_reg_0_15_11_11/SP/I
+RAM_reg_0_15_11_11/SP/WADR0
+RAM_reg_0_15_11_11/SP/WADR1
+RAM_reg_0_15_11_11/SP/WADR2
+RAM_reg_0_15_11_11/SP/WADR3
+RAM_reg_0_15_11_11/SP/WE
+RAM_reg_0_15_12_12/DP/I
+RAM_reg_0_15_12_12/DP/WADR0
+RAM_reg_0_15_12_12/DP/WADR1
+RAM_reg_0_15_12_12/DP/WADR2
+RAM_reg_0_15_12_12/DP/WADR3
+RAM_reg_0_15_12_12/DP/WE
+RAM_reg_0_15_12_12/SP/I
+RAM_reg_0_15_12_12/SP/WADR0
+RAM_reg_0_15_12_12/SP/WADR1
+RAM_reg_0_15_12_12/SP/WADR2
+RAM_reg_0_15_12_12/SP/WADR3
+RAM_reg_0_15_12_12/SP/WE
+RAM_reg_0_15_13_13/DP/I
+RAM_reg_0_15_13_13/DP/WADR0
+RAM_reg_0_15_13_13/DP/WADR1
+RAM_reg_0_15_13_13/DP/WADR2
+RAM_reg_0_15_13_13/DP/WADR3
+RAM_reg_0_15_13_13/DP/WE
+RAM_reg_0_15_13_13/SP/I
+RAM_reg_0_15_13_13/SP/WADR0
+RAM_reg_0_15_13_13/SP/WADR1
+RAM_reg_0_15_13_13/SP/WADR2
+RAM_reg_0_15_13_13/SP/WADR3
+RAM_reg_0_15_13_13/SP/WE
+RAM_reg_0_15_14_14/DP/I
+RAM_reg_0_15_14_14/DP/WADR0
+RAM_reg_0_15_14_14/DP/WADR1
+RAM_reg_0_15_14_14/DP/WADR2
+RAM_reg_0_15_14_14/DP/WADR3
+RAM_reg_0_15_14_14/DP/WE
+RAM_reg_0_15_14_14/SP/I
+RAM_reg_0_15_14_14/SP/WADR0
+RAM_reg_0_15_14_14/SP/WADR1
+RAM_reg_0_15_14_14/SP/WADR2
+RAM_reg_0_15_14_14/SP/WADR3
+RAM_reg_0_15_14_14/SP/WE
+RAM_reg_0_15_15_15/DP/I
+RAM_reg_0_15_15_15/DP/WADR0
+RAM_reg_0_15_15_15/DP/WADR1
+RAM_reg_0_15_15_15/DP/WADR2
+RAM_reg_0_15_15_15/DP/WADR3
+RAM_reg_0_15_15_15/DP/WE
+RAM_reg_0_15_15_15/SP/I
+RAM_reg_0_15_15_15/SP/WADR0
+RAM_reg_0_15_15_15/SP/WADR1
+RAM_reg_0_15_15_15/SP/WADR2
+RAM_reg_0_15_15_15/SP/WADR3
+RAM_reg_0_15_15_15/SP/WE
+RAM_reg_0_15_16_16/DP/I
+RAM_reg_0_15_16_16/DP/WADR0
+RAM_reg_0_15_16_16/DP/WADR1
+RAM_reg_0_15_16_16/DP/WADR2
+RAM_reg_0_15_16_16/DP/WADR3
+RAM_reg_0_15_16_16/DP/WE
+RAM_reg_0_15_16_16/SP/I
+RAM_reg_0_15_16_16/SP/WADR0
+RAM_reg_0_15_16_16/SP/WADR1
+RAM_reg_0_15_16_16/SP/WADR2
+RAM_reg_0_15_16_16/SP/WADR3
+RAM_reg_0_15_16_16/SP/WE
+RAM_reg_0_15_17_17/DP/I
+RAM_reg_0_15_17_17/DP/WADR0
+RAM_reg_0_15_17_17/DP/WADR1
+RAM_reg_0_15_17_17/DP/WADR2
+RAM_reg_0_15_17_17/DP/WADR3
+RAM_reg_0_15_17_17/DP/WE
+RAM_reg_0_15_17_17/SP/I
+RAM_reg_0_15_17_17/SP/WADR0
+RAM_reg_0_15_17_17/SP/WADR1
+RAM_reg_0_15_17_17/SP/WADR2
+RAM_reg_0_15_17_17/SP/WADR3
+RAM_reg_0_15_17_17/SP/WE
+RAM_reg_0_15_18_18/DP/I
+RAM_reg_0_15_18_18/DP/WADR0
+RAM_reg_0_15_18_18/DP/WADR1
+RAM_reg_0_15_18_18/DP/WADR2
+RAM_reg_0_15_18_18/DP/WADR3
+RAM_reg_0_15_18_18/DP/WE
+RAM_reg_0_15_18_18/SP/I
+RAM_reg_0_15_18_18/SP/WADR0
+RAM_reg_0_15_18_18/SP/WADR1
+RAM_reg_0_15_18_18/SP/WADR2
+RAM_reg_0_15_18_18/SP/WADR3
+RAM_reg_0_15_18_18/SP/WE
+RAM_reg_0_15_19_19/DP/I
+RAM_reg_0_15_19_19/DP/WADR0
+RAM_reg_0_15_19_19/DP/WADR1
+RAM_reg_0_15_19_19/DP/WADR2
+RAM_reg_0_15_19_19/DP/WADR3
+RAM_reg_0_15_19_19/DP/WE
+RAM_reg_0_15_19_19/SP/I
+RAM_reg_0_15_19_19/SP/WADR0
+RAM_reg_0_15_19_19/SP/WADR1
+RAM_reg_0_15_19_19/SP/WADR2
+RAM_reg_0_15_19_19/SP/WADR3
+RAM_reg_0_15_19_19/SP/WE
+RAM_reg_0_15_1_1/DP/I
+RAM_reg_0_15_1_1/DP/WADR0
+RAM_reg_0_15_1_1/DP/WADR1
+RAM_reg_0_15_1_1/DP/WADR2
+RAM_reg_0_15_1_1/DP/WADR3
+RAM_reg_0_15_1_1/DP/WE
+RAM_reg_0_15_1_1/SP/I
+RAM_reg_0_15_1_1/SP/WADR0
+RAM_reg_0_15_1_1/SP/WADR1
+RAM_reg_0_15_1_1/SP/WADR2
+RAM_reg_0_15_1_1/SP/WADR3
+RAM_reg_0_15_1_1/SP/WE
+RAM_reg_0_15_20_20/DP/I
+RAM_reg_0_15_20_20/DP/WADR0
+RAM_reg_0_15_20_20/DP/WADR1
+RAM_reg_0_15_20_20/DP/WADR2
+RAM_reg_0_15_20_20/DP/WADR3
+RAM_reg_0_15_20_20/DP/WE
+RAM_reg_0_15_20_20/SP/I
+RAM_reg_0_15_20_20/SP/WADR0
+RAM_reg_0_15_20_20/SP/WADR1
+RAM_reg_0_15_20_20/SP/WADR2
+RAM_reg_0_15_20_20/SP/WADR3
+RAM_reg_0_15_20_20/SP/WE
+RAM_reg_0_15_21_21/DP/I
+RAM_reg_0_15_21_21/DP/WADR0
+RAM_reg_0_15_21_21/DP/WADR1
+RAM_reg_0_15_21_21/DP/WADR2
+RAM_reg_0_15_21_21/DP/WADR3
+RAM_reg_0_15_21_21/DP/WE
+RAM_reg_0_15_21_21/SP/I
+RAM_reg_0_15_21_21/SP/WADR0
+RAM_reg_0_15_21_21/SP/WADR1
+RAM_reg_0_15_21_21/SP/WADR2
+RAM_reg_0_15_21_21/SP/WADR3
+RAM_reg_0_15_21_21/SP/WE
+RAM_reg_0_15_22_22/DP/I
+RAM_reg_0_15_22_22/DP/WADR0
+RAM_reg_0_15_22_22/DP/WADR1
+RAM_reg_0_15_22_22/DP/WADR2
+RAM_reg_0_15_22_22/DP/WADR3
+RAM_reg_0_15_22_22/DP/WE
+RAM_reg_0_15_22_22/SP/I
+RAM_reg_0_15_22_22/SP/WADR0
+RAM_reg_0_15_22_22/SP/WADR1
+RAM_reg_0_15_22_22/SP/WADR2
+RAM_reg_0_15_22_22/SP/WADR3
+RAM_reg_0_15_22_22/SP/WE
+RAM_reg_0_15_23_23/DP/I
+RAM_reg_0_15_23_23/DP/WADR0
+RAM_reg_0_15_23_23/DP/WADR1
+RAM_reg_0_15_23_23/DP/WADR2
+RAM_reg_0_15_23_23/DP/WADR3
+RAM_reg_0_15_23_23/DP/WE
+RAM_reg_0_15_23_23/SP/I
+RAM_reg_0_15_23_23/SP/WADR0
+RAM_reg_0_15_23_23/SP/WADR1
+RAM_reg_0_15_23_23/SP/WADR2
+RAM_reg_0_15_23_23/SP/WADR3
+RAM_reg_0_15_23_23/SP/WE
+RAM_reg_0_15_24_24/DP/I
+RAM_reg_0_15_24_24/DP/WADR0
+RAM_reg_0_15_24_24/DP/WADR1
+RAM_reg_0_15_24_24/DP/WADR2
+RAM_reg_0_15_24_24/DP/WADR3
+RAM_reg_0_15_24_24/DP/WE
+RAM_reg_0_15_24_24/SP/I
+RAM_reg_0_15_24_24/SP/WADR0
+RAM_reg_0_15_24_24/SP/WADR1
+RAM_reg_0_15_24_24/SP/WADR2
+RAM_reg_0_15_24_24/SP/WADR3
+RAM_reg_0_15_24_24/SP/WE
+RAM_reg_0_15_25_25/DP/I
+RAM_reg_0_15_25_25/DP/WADR0
+RAM_reg_0_15_25_25/DP/WADR1
+RAM_reg_0_15_25_25/DP/WADR2
+RAM_reg_0_15_25_25/DP/WADR3
+RAM_reg_0_15_25_25/DP/WE
+RAM_reg_0_15_25_25/SP/I
+RAM_reg_0_15_25_25/SP/WADR0
+RAM_reg_0_15_25_25/SP/WADR1
+RAM_reg_0_15_25_25/SP/WADR2
+RAM_reg_0_15_25_25/SP/WADR3
+RAM_reg_0_15_25_25/SP/WE
+RAM_reg_0_15_26_26/DP/I
+RAM_reg_0_15_26_26/DP/WADR0
+RAM_reg_0_15_26_26/DP/WADR1
+RAM_reg_0_15_26_26/DP/WADR2
+RAM_reg_0_15_26_26/DP/WADR3
+RAM_reg_0_15_26_26/DP/WE
+RAM_reg_0_15_26_26/SP/I
+RAM_reg_0_15_26_26/SP/WADR0
+RAM_reg_0_15_26_26/SP/WADR1
+RAM_reg_0_15_26_26/SP/WADR2
+RAM_reg_0_15_26_26/SP/WADR3
+RAM_reg_0_15_26_26/SP/WE
+RAM_reg_0_15_27_27/DP/I
+RAM_reg_0_15_27_27/DP/WADR0
+RAM_reg_0_15_27_27/DP/WADR1
+RAM_reg_0_15_27_27/DP/WADR2
+RAM_reg_0_15_27_27/DP/WADR3
+RAM_reg_0_15_27_27/DP/WE
+RAM_reg_0_15_27_27/SP/I
+RAM_reg_0_15_27_27/SP/WADR0
+RAM_reg_0_15_27_27/SP/WADR1
+RAM_reg_0_15_27_27/SP/WADR2
+RAM_reg_0_15_27_27/SP/WADR3
+RAM_reg_0_15_27_27/SP/WE
+RAM_reg_0_15_28_28/DP/I
+RAM_reg_0_15_28_28/DP/WADR0
+RAM_reg_0_15_28_28/DP/WADR1
+RAM_reg_0_15_28_28/DP/WADR2
+RAM_reg_0_15_28_28/DP/WADR3
+RAM_reg_0_15_28_28/DP/WE
+RAM_reg_0_15_28_28/SP/I
+RAM_reg_0_15_28_28/SP/WADR0
+RAM_reg_0_15_28_28/SP/WADR1
+RAM_reg_0_15_28_28/SP/WADR2
+RAM_reg_0_15_28_28/SP/WADR3
+RAM_reg_0_15_28_28/SP/WE
+RAM_reg_0_15_29_29/DP/I
+RAM_reg_0_15_29_29/DP/WADR0
+RAM_reg_0_15_29_29/DP/WADR1
+RAM_reg_0_15_29_29/DP/WADR2
+RAM_reg_0_15_29_29/DP/WADR3
+RAM_reg_0_15_29_29/DP/WE
+RAM_reg_0_15_29_29/SP/I
+RAM_reg_0_15_29_29/SP/WADR0
+RAM_reg_0_15_29_29/SP/WADR1
+RAM_reg_0_15_29_29/SP/WADR2
+RAM_reg_0_15_29_29/SP/WADR3
+RAM_reg_0_15_29_29/SP/WE
+RAM_reg_0_15_2_2/DP/I
+RAM_reg_0_15_2_2/DP/WADR0
+RAM_reg_0_15_2_2/DP/WADR1
+RAM_reg_0_15_2_2/DP/WADR2
+RAM_reg_0_15_2_2/DP/WADR3
+RAM_reg_0_15_2_2/DP/WE
+RAM_reg_0_15_2_2/SP/I
+RAM_reg_0_15_2_2/SP/WADR0
+RAM_reg_0_15_2_2/SP/WADR1
+RAM_reg_0_15_2_2/SP/WADR2
+RAM_reg_0_15_2_2/SP/WADR3
+RAM_reg_0_15_2_2/SP/WE
+RAM_reg_0_15_30_30/DP/I
+RAM_reg_0_15_30_30/DP/WADR0
+RAM_reg_0_15_30_30/DP/WADR1
+RAM_reg_0_15_30_30/DP/WADR2
+RAM_reg_0_15_30_30/DP/WADR3
+RAM_reg_0_15_30_30/DP/WE
+RAM_reg_0_15_30_30/SP/I
+RAM_reg_0_15_30_30/SP/WADR0
+RAM_reg_0_15_30_30/SP/WADR1
+RAM_reg_0_15_30_30/SP/WADR2
+RAM_reg_0_15_30_30/SP/WADR3
+RAM_reg_0_15_30_30/SP/WE
+RAM_reg_0_15_31_31/DP/I
+RAM_reg_0_15_31_31/DP/WADR0
+RAM_reg_0_15_31_31/DP/WADR1
+RAM_reg_0_15_31_31/DP/WADR2
+RAM_reg_0_15_31_31/DP/WADR3
+RAM_reg_0_15_31_31/DP/WE
+RAM_reg_0_15_31_31/SP/I
+RAM_reg_0_15_31_31/SP/WADR0
+RAM_reg_0_15_31_31/SP/WADR1
+RAM_reg_0_15_31_31/SP/WADR2
+RAM_reg_0_15_31_31/SP/WADR3
+RAM_reg_0_15_31_31/SP/WE
+RAM_reg_0_15_3_3/DP/I
+RAM_reg_0_15_3_3/DP/WADR0
+RAM_reg_0_15_3_3/DP/WADR1
+RAM_reg_0_15_3_3/DP/WADR2
+RAM_reg_0_15_3_3/DP/WADR3
+RAM_reg_0_15_3_3/DP/WE
+RAM_reg_0_15_3_3/SP/I
+RAM_reg_0_15_3_3/SP/WADR0
+RAM_reg_0_15_3_3/SP/WADR1
+RAM_reg_0_15_3_3/SP/WADR2
+RAM_reg_0_15_3_3/SP/WADR3
+RAM_reg_0_15_3_3/SP/WE
+RAM_reg_0_15_4_4/DP/I
+RAM_reg_0_15_4_4/DP/WADR0
+RAM_reg_0_15_4_4/DP/WADR1
+RAM_reg_0_15_4_4/DP/WADR2
+RAM_reg_0_15_4_4/DP/WADR3
+RAM_reg_0_15_4_4/DP/WE
+RAM_reg_0_15_4_4/SP/I
+RAM_reg_0_15_4_4/SP/WADR0
+RAM_reg_0_15_4_4/SP/WADR1
+RAM_reg_0_15_4_4/SP/WADR2
+RAM_reg_0_15_4_4/SP/WADR3
+RAM_reg_0_15_4_4/SP/WE
+RAM_reg_0_15_5_5/DP/I
+RAM_reg_0_15_5_5/DP/WADR0
+RAM_reg_0_15_5_5/DP/WADR1
+RAM_reg_0_15_5_5/DP/WADR2
+RAM_reg_0_15_5_5/DP/WADR3
+RAM_reg_0_15_5_5/DP/WE
+RAM_reg_0_15_5_5/SP/I
+RAM_reg_0_15_5_5/SP/WADR0
+RAM_reg_0_15_5_5/SP/WADR1
+RAM_reg_0_15_5_5/SP/WADR2
+RAM_reg_0_15_5_5/SP/WADR3
+RAM_reg_0_15_5_5/SP/WE
+RAM_reg_0_15_6_6/DP/I
+RAM_reg_0_15_6_6/DP/WADR0
+RAM_reg_0_15_6_6/DP/WADR1
+RAM_reg_0_15_6_6/DP/WADR2
+RAM_reg_0_15_6_6/DP/WADR3
+RAM_reg_0_15_6_6/DP/WE
+RAM_reg_0_15_6_6/SP/I
+RAM_reg_0_15_6_6/SP/WADR0
+RAM_reg_0_15_6_6/SP/WADR1
+RAM_reg_0_15_6_6/SP/WADR2
+RAM_reg_0_15_6_6/SP/WADR3
+RAM_reg_0_15_6_6/SP/WE
+RAM_reg_0_15_7_7/DP/I
+RAM_reg_0_15_7_7/DP/WADR0
+RAM_reg_0_15_7_7/DP/WADR1
+RAM_reg_0_15_7_7/DP/WADR2
+RAM_reg_0_15_7_7/DP/WADR3
+RAM_reg_0_15_7_7/DP/WE
+RAM_reg_0_15_7_7/SP/I
+RAM_reg_0_15_7_7/SP/WADR0
+RAM_reg_0_15_7_7/SP/WADR1
+RAM_reg_0_15_7_7/SP/WADR2
+RAM_reg_0_15_7_7/SP/WADR3
+RAM_reg_0_15_7_7/SP/WE
+RAM_reg_0_15_8_8/DP/I
+RAM_reg_0_15_8_8/DP/WADR0
+RAM_reg_0_15_8_8/DP/WADR1
+RAM_reg_0_15_8_8/DP/WADR2
+RAM_reg_0_15_8_8/DP/WADR3
+RAM_reg_0_15_8_8/DP/WE
+RAM_reg_0_15_8_8/SP/I
+RAM_reg_0_15_8_8/SP/WADR0
+RAM_reg_0_15_8_8/SP/WADR1
+RAM_reg_0_15_8_8/SP/WADR2
+RAM_reg_0_15_8_8/SP/WADR3
+RAM_reg_0_15_8_8/SP/WE
+RAM_reg_0_15_9_9/DP/I
+RAM_reg_0_15_9_9/DP/WADR0
+RAM_reg_0_15_9_9/DP/WADR1
+RAM_reg_0_15_9_9/DP/WADR2
+RAM_reg_0_15_9_9/DP/WADR3
+RAM_reg_0_15_9_9/DP/WE
+RAM_reg_0_15_9_9/SP/I
+RAM_reg_0_15_9_9/SP/WADR0
+RAM_reg_0_15_9_9/SP/WADR1
+RAM_reg_0_15_9_9/SP/WADR2
+RAM_reg_0_15_9_9/SP/WADR3
+RAM_reg_0_15_9_9/SP/WE
+r_A_reg_rep_bsel[2]/D
+r_A_reg_rep_bsel[3]/D
+r_A_reg_rep_bsel[4]/D
+r_A_reg_rep_bsel[5]/D
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (41)
+-------------------------------
+ There are 41 input ports with no input delay specified. (HIGH)
+
+A[2]
+A[3]
+A[4]
+A[5]
+Di[0]
+Di[10]
+Di[11]
+Di[12]
+Di[13]
+Di[14]
+Di[15]
+Di[16]
+Di[17]
+Di[18]
+Di[19]
+Di[1]
+Di[20]
+Di[21]
+Di[22]
+Di[23]
+Di[24]
+Di[25]
+Di[26]
+Di[27]
+Di[28]
+Di[29]
+Di[2]
+Di[30]
+Di[31]
+Di[3]
+Di[4]
+Di[5]
+Di[6]
+Di[7]
+Di[8]
+Di[9]
+EN
+WE[0]
+WE[1]
+WE[2]
+WE[3]
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (32)
+--------------------------------
+ There are 32 ports with no output delay specified. (HIGH)
+
+Do[0]
+Do[10]
+Do[11]
+Do[12]
+Do[13]
+Do[14]
+Do[15]
+Do[16]
+Do[17]
+Do[18]
+Do[19]
+Do[1]
+Do[20]
+Do[21]
+Do[22]
+Do[23]
+Do[24]
+Do[25]
+Do[26]
+Do[27]
+Do[28]
+Do[29]
+Do[2]
+Do[30]
+Do[31]
+Do[3]
+Do[4]
+Do[5]
+Do[6]
+Do[7]
+Do[8]
+Do[9]
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  420          inf        0.000                      0                  420           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           420 Endpoints
+Min Delay           420 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 r_A_reg_rep_bsel[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Do[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.816ns  (logic 3.531ns (60.718%)  route 2.285ns (39.282%))
+  Logic Levels:           4  (FDRE=1 LUT2=1 OBUF=1 RAMD32=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  r_A_reg_rep_bsel[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  r_A_reg_rep_bsel[2]/Q
+                         net (fo=32, unplaced)        1.036     1.514    RAM_reg_0_15_0_0/DPRA0
+                                                                      r  RAM_reg_0_15_0_0/DP/RADR0
+                         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.295     1.809 r  RAM_reg_0_15_0_0/DP/O
+                         net (fo=1, unplaced)         0.449     2.258    Do0[0]
+                                                                      r  Do_OBUF[0]_inst_i_1/I1
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.382 r  Do_OBUF[0]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.182    Do_OBUF[0]
+                                                                      r  Do_OBUF[0]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     5.816 r  Do_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     5.816    Do[0]
+                                                                      r  Do[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 r_A_reg_rep_bsel[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Do[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.816ns  (logic 3.531ns (60.718%)  route 2.285ns (39.282%))
+  Logic Levels:           4  (FDRE=1 LUT2=1 OBUF=1 RAMD32=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  r_A_reg_rep_bsel[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  r_A_reg_rep_bsel[2]/Q
+                         net (fo=32, unplaced)        1.036     1.514    RAM_reg_0_15_10_10/DPRA0
+                                                                      r  RAM_reg_0_15_10_10/DP/RADR0
+                         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.295     1.809 r  RAM_reg_0_15_10_10/DP/O
+                         net (fo=1, unplaced)         0.449     2.258    Do0[10]
+                                                                      r  Do_OBUF[10]_inst_i_1/I1
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.382 r  Do_OBUF[10]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.182    Do_OBUF[10]
+                                                                      r  Do_OBUF[10]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     5.816 r  Do_OBUF[10]_inst/O
+                         net (fo=0)                   0.000     5.816    Do[10]
+                                                                      r  Do[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 r_A_reg_rep_bsel[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Do[12]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.816ns  (logic 3.531ns (60.718%)  route 2.285ns (39.282%))
+  Logic Levels:           4  (FDRE=1 LUT2=1 OBUF=1 RAMD32=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  r_A_reg_rep_bsel[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  r_A_reg_rep_bsel[2]/Q
+                         net (fo=32, unplaced)        1.036     1.514    RAM_reg_0_15_12_12/DPRA0
+                                                                      r  RAM_reg_0_15_12_12/DP/RADR0
+                         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.295     1.809 r  RAM_reg_0_15_12_12/DP/O
+                         net (fo=1, unplaced)         0.449     2.258    Do0[12]
+                                                                      r  Do_OBUF[12]_inst_i_1/I1
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.382 r  Do_OBUF[12]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.182    Do_OBUF[12]
+                                                                      r  Do_OBUF[12]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     5.816 r  Do_OBUF[12]_inst/O
+                         net (fo=0)                   0.000     5.816    Do[12]
+                                                                      r  Do[12] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 r_A_reg_rep_bsel[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Do[14]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.816ns  (logic 3.531ns (60.718%)  route 2.285ns (39.282%))
+  Logic Levels:           4  (FDRE=1 LUT2=1 OBUF=1 RAMD32=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  r_A_reg_rep_bsel[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  r_A_reg_rep_bsel[2]/Q
+                         net (fo=32, unplaced)        1.036     1.514    RAM_reg_0_15_14_14/DPRA0
+                                                                      r  RAM_reg_0_15_14_14/DP/RADR0
+                         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.295     1.809 r  RAM_reg_0_15_14_14/DP/O
+                         net (fo=1, unplaced)         0.449     2.258    Do0[14]
+                                                                      r  Do_OBUF[14]_inst_i_1/I1
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.382 r  Do_OBUF[14]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.182    Do_OBUF[14]
+                                                                      r  Do_OBUF[14]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     5.816 r  Do_OBUF[14]_inst/O
+                         net (fo=0)                   0.000     5.816    Do[14]
+                                                                      r  Do[14] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 r_A_reg_rep_bsel[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Do[16]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.816ns  (logic 3.531ns (60.718%)  route 2.285ns (39.282%))
+  Logic Levels:           4  (FDRE=1 LUT2=1 OBUF=1 RAMD32=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  r_A_reg_rep_bsel[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  r_A_reg_rep_bsel[2]/Q
+                         net (fo=32, unplaced)        1.036     1.514    RAM_reg_0_15_16_16/DPRA0
+                                                                      r  RAM_reg_0_15_16_16/DP/RADR0
+                         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.295     1.809 r  RAM_reg_0_15_16_16/DP/O
+                         net (fo=1, unplaced)         0.449     2.258    Do0[16]
+                                                                      r  Do_OBUF[16]_inst_i_1/I1
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.382 r  Do_OBUF[16]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.182    Do_OBUF[16]
+                                                                      r  Do_OBUF[16]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     5.816 r  Do_OBUF[16]_inst/O
+                         net (fo=0)                   0.000     5.816    Do[16]
+                                                                      r  Do[16] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 r_A_reg_rep_bsel[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Do[18]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.816ns  (logic 3.531ns (60.718%)  route 2.285ns (39.282%))
+  Logic Levels:           4  (FDRE=1 LUT2=1 OBUF=1 RAMD32=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  r_A_reg_rep_bsel[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  r_A_reg_rep_bsel[2]/Q
+                         net (fo=32, unplaced)        1.036     1.514    RAM_reg_0_15_18_18/DPRA0
+                                                                      r  RAM_reg_0_15_18_18/DP/RADR0
+                         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.295     1.809 r  RAM_reg_0_15_18_18/DP/O
+                         net (fo=1, unplaced)         0.449     2.258    Do0[18]
+                                                                      r  Do_OBUF[18]_inst_i_1/I1
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.382 r  Do_OBUF[18]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.182    Do_OBUF[18]
+                                                                      r  Do_OBUF[18]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     5.816 r  Do_OBUF[18]_inst/O
+                         net (fo=0)                   0.000     5.816    Do[18]
+                                                                      r  Do[18] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 r_A_reg_rep_bsel[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Do[20]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.816ns  (logic 3.531ns (60.718%)  route 2.285ns (39.282%))
+  Logic Levels:           4  (FDRE=1 LUT2=1 OBUF=1 RAMD32=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  r_A_reg_rep_bsel[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  r_A_reg_rep_bsel[2]/Q
+                         net (fo=32, unplaced)        1.036     1.514    RAM_reg_0_15_20_20/DPRA0
+                                                                      r  RAM_reg_0_15_20_20/DP/RADR0
+                         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.295     1.809 r  RAM_reg_0_15_20_20/DP/O
+                         net (fo=1, unplaced)         0.449     2.258    Do0[20]
+                                                                      r  Do_OBUF[20]_inst_i_1/I1
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.382 r  Do_OBUF[20]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.182    Do_OBUF[20]
+                                                                      r  Do_OBUF[20]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     5.816 r  Do_OBUF[20]_inst/O
+                         net (fo=0)                   0.000     5.816    Do[20]
+                                                                      r  Do[20] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 r_A_reg_rep_bsel[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Do[22]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.816ns  (logic 3.531ns (60.718%)  route 2.285ns (39.282%))
+  Logic Levels:           4  (FDRE=1 LUT2=1 OBUF=1 RAMD32=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  r_A_reg_rep_bsel[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  r_A_reg_rep_bsel[2]/Q
+                         net (fo=32, unplaced)        1.036     1.514    RAM_reg_0_15_22_22/DPRA0
+                                                                      r  RAM_reg_0_15_22_22/DP/RADR0
+                         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.295     1.809 r  RAM_reg_0_15_22_22/DP/O
+                         net (fo=1, unplaced)         0.449     2.258    Do0[22]
+                                                                      r  Do_OBUF[22]_inst_i_1/I1
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.382 r  Do_OBUF[22]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.182    Do_OBUF[22]
+                                                                      r  Do_OBUF[22]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     5.816 r  Do_OBUF[22]_inst/O
+                         net (fo=0)                   0.000     5.816    Do[22]
+                                                                      r  Do[22] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 r_A_reg_rep_bsel[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Do[24]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.816ns  (logic 3.531ns (60.718%)  route 2.285ns (39.282%))
+  Logic Levels:           4  (FDRE=1 LUT2=1 OBUF=1 RAMD32=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  r_A_reg_rep_bsel[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  r_A_reg_rep_bsel[2]/Q
+                         net (fo=32, unplaced)        1.036     1.514    RAM_reg_0_15_24_24/DPRA0
+                                                                      r  RAM_reg_0_15_24_24/DP/RADR0
+                         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.295     1.809 r  RAM_reg_0_15_24_24/DP/O
+                         net (fo=1, unplaced)         0.449     2.258    Do0[24]
+                                                                      r  Do_OBUF[24]_inst_i_1/I1
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.382 r  Do_OBUF[24]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.182    Do_OBUF[24]
+                                                                      r  Do_OBUF[24]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     5.816 r  Do_OBUF[24]_inst/O
+                         net (fo=0)                   0.000     5.816    Do[24]
+                                                                      r  Do[24] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 r_A_reg_rep_bsel[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Do[26]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.816ns  (logic 3.531ns (60.718%)  route 2.285ns (39.282%))
+  Logic Levels:           4  (FDRE=1 LUT2=1 OBUF=1 RAMD32=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  r_A_reg_rep_bsel[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  r_A_reg_rep_bsel[2]/Q
+                         net (fo=32, unplaced)        1.036     1.514    RAM_reg_0_15_26_26/DPRA0
+                                                                      r  RAM_reg_0_15_26_26/DP/RADR0
+                         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.295     1.809 r  RAM_reg_0_15_26_26/DP/O
+                         net (fo=1, unplaced)         0.449     2.258    Do0[26]
+                                                                      r  Do_OBUF[26]_inst_i_1/I1
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.382 r  Do_OBUF[26]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.182    Do_OBUF[26]
+                                                                      r  Do_OBUF[26]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     5.816 r  Do_OBUF[26]_inst/O
+                         net (fo=0)                   0.000     5.816    Do[26]
+                                                                      r  Do[26] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 Di[0]
+                            (input port)
+  Destination:            RAM_reg_0_15_0_0/DP/I
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.538ns  (logic 0.200ns (37.290%)  route 0.337ns (62.710%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  Di[0] (IN)
+                         net (fo=0)                   0.000     0.000    Di[0]
+                                                                      r  Di_IBUF[0]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  Di_IBUF[0]_inst/O
+                         net (fo=2, unplaced)         0.337     0.538    RAM_reg_0_15_0_0/D
+                         RAMD32                                       r  RAM_reg_0_15_0_0/DP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[2]
+                            (input port)
+  Destination:            RAM_reg_0_15_0_0/DP/WADR0
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.538ns  (logic 0.200ns (37.290%)  route 0.337ns (62.710%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[2] (IN)
+                         net (fo=0)                   0.000     0.000    A[2]
+                                                                      r  A_IBUF[2]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  A_IBUF[2]_inst/O
+                         net (fo=97, unplaced)        0.337     0.538    RAM_reg_0_15_0_0/A0
+                         RAMD32                                       r  RAM_reg_0_15_0_0/DP/WADR0
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[3]
+                            (input port)
+  Destination:            RAM_reg_0_15_0_0/DP/WADR1
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.538ns  (logic 0.200ns (37.290%)  route 0.337ns (62.710%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[3] (IN)
+                         net (fo=0)                   0.000     0.000    A[3]
+                                                                      r  A_IBUF[3]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  A_IBUF[3]_inst/O
+                         net (fo=97, unplaced)        0.337     0.538    RAM_reg_0_15_0_0/A1
+                         RAMD32                                       r  RAM_reg_0_15_0_0/DP/WADR1
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[4]
+                            (input port)
+  Destination:            RAM_reg_0_15_0_0/DP/WADR2
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.538ns  (logic 0.200ns (37.290%)  route 0.337ns (62.710%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[4] (IN)
+                         net (fo=0)                   0.000     0.000    A[4]
+                                                                      r  A_IBUF[4]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  A_IBUF[4]_inst/O
+                         net (fo=97, unplaced)        0.337     0.538    RAM_reg_0_15_0_0/A2
+                         RAMD32                                       r  RAM_reg_0_15_0_0/DP/WADR2
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[5]
+                            (input port)
+  Destination:            RAM_reg_0_15_0_0/DP/WADR3
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.538ns  (logic 0.200ns (37.290%)  route 0.337ns (62.710%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[5] (IN)
+                         net (fo=0)                   0.000     0.000    A[5]
+                                                                      r  A_IBUF[5]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  A_IBUF[5]_inst/O
+                         net (fo=97, unplaced)        0.337     0.538    RAM_reg_0_15_0_0/A3
+                         RAMD32                                       r  RAM_reg_0_15_0_0/DP/WADR3
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Di[0]
+                            (input port)
+  Destination:            RAM_reg_0_15_0_0/SP/I
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.538ns  (logic 0.200ns (37.290%)  route 0.337ns (62.710%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  Di[0] (IN)
+                         net (fo=0)                   0.000     0.000    Di[0]
+                                                                      r  Di_IBUF[0]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  Di_IBUF[0]_inst/O
+                         net (fo=2, unplaced)         0.337     0.538    RAM_reg_0_15_0_0/D
+                         RAMD32                                       r  RAM_reg_0_15_0_0/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[2]
+                            (input port)
+  Destination:            RAM_reg_0_15_0_0/SP/WADR0
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.538ns  (logic 0.200ns (37.290%)  route 0.337ns (62.710%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[2] (IN)
+                         net (fo=0)                   0.000     0.000    A[2]
+                                                                      r  A_IBUF[2]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  A_IBUF[2]_inst/O
+                         net (fo=97, unplaced)        0.337     0.538    RAM_reg_0_15_0_0/A0
+                         RAMD32                                       r  RAM_reg_0_15_0_0/SP/WADR0
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[3]
+                            (input port)
+  Destination:            RAM_reg_0_15_0_0/SP/WADR1
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.538ns  (logic 0.200ns (37.290%)  route 0.337ns (62.710%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[3] (IN)
+                         net (fo=0)                   0.000     0.000    A[3]
+                                                                      r  A_IBUF[3]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  A_IBUF[3]_inst/O
+                         net (fo=97, unplaced)        0.337     0.538    RAM_reg_0_15_0_0/A1
+                         RAMD32                                       r  RAM_reg_0_15_0_0/SP/WADR1
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[4]
+                            (input port)
+  Destination:            RAM_reg_0_15_0_0/SP/WADR2
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.538ns  (logic 0.200ns (37.290%)  route 0.337ns (62.710%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[4] (IN)
+                         net (fo=0)                   0.000     0.000    A[4]
+                                                                      r  A_IBUF[4]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  A_IBUF[4]_inst/O
+                         net (fo=97, unplaced)        0.337     0.538    RAM_reg_0_15_0_0/A2
+                         RAMD32                                       r  RAM_reg_0_15_0_0/SP/WADR2
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[5]
+                            (input port)
+  Destination:            RAM_reg_0_15_0_0/SP/WADR3
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.538ns  (logic 0.200ns (37.290%)  route 0.337ns (62.710%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[5] (IN)
+                         net (fo=0)                   0.000     0.000    A[5]
+                                                                      r  A_IBUF[5]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  A_IBUF[5]_inst/O
+                         net (fo=97, unplaced)        0.337     0.538    RAM_reg_0_15_0_0/A3
+                         RAMD32                                       r  RAM_reg_0_15_0_0/SP/WADR3
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
